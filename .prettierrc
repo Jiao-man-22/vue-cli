@@ -1,0 +1,5 @@
+/*修改代码格式符号eslint*/
+{
+    "semi":false,
+    "singleQuote":true
+}
