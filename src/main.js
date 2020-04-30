@@ -9,11 +9,9 @@ import './assets/css/Login.css'
 // 引入element的样式表
 import  'element-ui/lib/theme-chalk/index.css'
 //导入element组件
-import  './plugin/element.js'
+import './plugin/element.js'
 //导入字体图标库
 import './assets/iconfont/iconfont.css'
-
-
 Vue.config.productionTip = false
 
 new Vue({

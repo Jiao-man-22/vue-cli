@@ -5,7 +5,8 @@ import Vue from 'vue'
 // import {Input} from 'element-ui'
 //优化
 //Message没有使用
-import { Button,Form,FormItem,Input,Container,Header,Main,Aside} from 'element-ui'
+import { Button,Form,FormItem,Input,Container,Header,Main,Aside,Menu,Submenu,MenuItemGroup,MenuItem} from 'element-ui'
+
 Vue.use(Form)
 Vue.use(Button)
 Vue.use(FormItem)
@@ -14,4 +15,8 @@ Vue.use(Container)
 Vue.use(Header)
 Vue.use(Main)
 Vue.use(Aside)
+Vue.use(Submenu)
+Vue.use(Menu)
+Vue.use(MenuItem)
+Vue.use(MenuItemGroup)
 // Vue.setprototype.$Message=Message
