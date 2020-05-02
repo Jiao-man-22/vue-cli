@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 //axiou时遇到的报错
 import vueRsource from 'vue-resource'
+import Welcome from '../components/Welcome.vue'
  
 Vue.use(vueRsource);
 
@@ -42,7 +43,12 @@ Vue.use(VueRouter)
   {
     path:'/home_T',
     name:'Home_T',
-    component: () => import('../components/Home.vue')
+    component: () => import('../components/Home.vue'),
+    redirect:'/welcome',
+    children:[
+      {path:'/welcome',component:Welcome}
+    ]
+
   }
 
 ]

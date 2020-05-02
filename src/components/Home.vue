@@ -16,7 +16,8 @@
       @open="handleOpen"
       @close="handleClose"
       background-color="#333744"
-      text-color="#fff">
+      text-color="#fff"
+      :router="true">
       <!-- 一级菜单区域 -->
       <el-submenu index="1">
         <!-- 一级菜单模板区域 -->
@@ -61,11 +62,11 @@
           <span>导航一</span>
         </template>
         </el-menu-item>
-
-      
-      
     </el-menu></el-aside>
-    <el-main>Main</el-main>
+    <el-main>
+      <!-- 路由占位符 -->
+        <router-view></router-view>
+    </el-main>
   </el-container>
 </el-container>
 </template>
@@ -107,6 +108,10 @@ export default {
 }
 .el-aside{
     background-color: #333744;
+    .el-menu{
+      border-right: none;
+    }
+    
 }
 .el-main{
     background-color: #eaedf1;

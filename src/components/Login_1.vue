@@ -70,7 +70,7 @@ export default {
                 if(!valid) return;
                 //连接服务器 服务器地址和表单数据绑定的对象
                 //await 修饰 需要异步 async,从后端返回来的数据中抽出需要 data数据
-                const {data:res}=await this.$http.post("example",this.login_form);
+                const {data:res}=await this.$http.post("login",this.login_form);
                 //判断状态
                 if(res.meta.status!==200) return this.$message.error("登陆失败"),
                 this.$message.success("登陆成功");
